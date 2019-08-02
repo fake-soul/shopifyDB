@@ -10,7 +10,7 @@ app.use(methodOverride("_method"));
 
 app.set("view engine", "ejs");
 // mongoose.connect("mongodb://localhost/data");
-mongoose.connect("mongodb://bharat:bharat:qaz123@ds259207.mlab.com:59207/test-db");
+mongoose.connect("mongodb://bharat:qaz123@ds259207.mlab.com:59207/test-db");
 
 
 // SCHEMA SETUP
