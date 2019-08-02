@@ -72,9 +72,9 @@ app.put("/data/:id", function(req, res) {
     });
 });
 
-// app.listen(process.env.PORT, process.env.IP, function(){
-//     console.log("The Tweet Server Has Started!");
-//  });
-app.listen(3000, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
     console.log("The Tweet Server Has Started!");
  });
+// app.listen(3000, function(){
+//     console.log("The Tweet Server Has Started!");
+//  });
