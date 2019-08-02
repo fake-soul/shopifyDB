@@ -1,0 +1,28 @@
+<% include partials/header %>
+ <div class="container">
+     <header class="jumbotron">
+         <div class="container">
+             <h1>Welcome To DB!</h1>
+             <p>Orders</p>
+         </div>
+     </header>
+     
+     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% data.forEach(function(data){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                   <h5><%= data.order_id %></h5>
+                   <div class="caption">
+                       <h4><%= data.email %></h4>
+                       <h4><%= data.number %></h4>
+                   </div>
+                   <p>
+                       <a href="/data/<%= data._id%>" class="btn btn-primary">Edit</a>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include partials/footer %>
