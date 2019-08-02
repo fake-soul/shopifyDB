@@ -9,7 +9,9 @@ app.use(bodyParser());
 app.use(methodOverride("_method"));
 
 app.set("view engine", "ejs");
-mongoose.connect("mongodb://localhost/data");
+// mongoose.connect("mongodb://localhost/data");
+mongoose.connect("mongodb://bharat:qwerty@123@ds259207.mlab.com:59207/test-db");
+
 
 // SCHEMA SETUP
 var dataSchema = new mongoose.Schema({
