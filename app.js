@@ -10,7 +10,7 @@ app.use(methodOverride("_method"));
 
 app.set("view engine", "ejs");
 // mongoose.connect("mongodb://localhost/data");
-mongoose.connect("mongodb://bharat:qwerty@123@ds259207.mlab.com:59207/test-db");
+mongoose.connect("mongodb://bharat:bharat:qaz123@ds259207.mlab.com:59207/test-db");
 
 
 // SCHEMA SETUP
@@ -72,6 +72,9 @@ app.put("/data/:id", function(req, res) {
     });
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+// app.listen(process.env.PORT, process.env.IP, function(){
+//     console.log("The Tweet Server Has Started!");
+//  });
+app.listen(3000, function(){
     console.log("The Tweet Server Has Started!");
  });
