@@ -46,7 +46,7 @@ app.post("/data", function(req, res){
         if(err){
             console.log(err);
         } else {
-            res.redirect("/data");
+            res.sendStatus(200);
         }
     });
 });
